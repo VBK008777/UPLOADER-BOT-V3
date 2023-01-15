@@ -11,19 +11,19 @@ logging.basicConfig(
 
 class Config(object):
 
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "5982419477:AAFf-wUSA-qRLt6XM4KpSG5urY8Bp6HyWuM")
 
-    API_ID = int(os.environ.get("API_ID", 12345))
+    API_ID = int(os.environ.get("API_ID", 20057449))
 
-    API_HASH = os.environ.get("API_HASH")
+    API_HASH = os.environ.get("API_HASH", "ca6d47a9cce7fb321443460f2eaecbf8")
 
-    AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "").split())
+    AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "916103953").split())
 
     BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "").split())
 
     DOWNLOAD_LOCATION = "./DOWNLOADS"
 
-    UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "")
+    UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "-1001846768657")
 
     MAX_FILE_SIZE = 4194304000
 
@@ -49,16 +49,16 @@ class Config(object):
 
     SESSION_NAME = os.environ.get("SESSION_NAME", "UploadLinkToFileBot")
 
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", -100))
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", -1001846768657))
 
     LOGGER = logging
 
-    OWNER_ID = int(os.environ.get("OWNER_ID", ""))
+    OWNER_ID = int(os.environ.get("OWNER_ID", "916103953"))
 
-    UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "")
+    UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "-1001846768657")
     
-    BOT_USERNAME = os.environ.get("BOT_USERNAME", "UploadLinkToFileBot")
+    BOT_USERNAME = os.environ.get("BOT_USERNAME", "UPLOADERv338bot")
 
-    PRO_USERS = list(set(int(x) for x in os.environ.get("PRO_USERS", "0").split()))
+    PRO_USERS = list(set(int(x) for x in os.environ.get("PRO_USERS", "916103953").split()))
 
     PRO_USERS.append(OWNER_ID)
